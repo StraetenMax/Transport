@@ -7,6 +7,7 @@ public class Bateau {
 	private String energie;
 	private int puissance;
 	private int vitesseMax;
+	private String typeBateau;
 	
 	//constructeurs vide et initialisé
 	public Bateau(){
@@ -15,6 +16,7 @@ public class Bateau {
 		energie = "";
 		puissance = 0;
 		vitesseMax = 0;
+		this.setTypeBateau();
 		System.out.println("Vivre le bateau");
 	}
 	public Bateau(int nbPassagers, String couleur,String energie,int puissance,int vitesseMax){
@@ -23,6 +25,7 @@ public class Bateau {
 		this.energie = energie;
 		this.puissance = puissance;
 		this.vitesseMax = vitesseMax;
+		this.setTypeBateau();
 		System.out.println("J'aime le bateau");
 	}
 	
@@ -32,6 +35,7 @@ public class Bateau {
 	}
 	public void setNbPassagers(int nbPassagers){
 		this.nbPassagers = nbPassagers;
+		this.setTypeBateau();
 	}
 	public String getCouleur(){
 		return couleur;
@@ -56,6 +60,16 @@ public class Bateau {
 	}
 	public void setVitesseMax(int vitesseMax){
 		this.vitesseMax=vitesseMax;
+	}
+	public String getTypeBateau(){
+		return typeBateau;
+	}
+	public void setTypeBateau(){
+		if(this.nbPassagers<20){
+			this.typeBateau = "bateau de plaisance";
+		}else{
+			this.typeBateau = "paquebot";
+		}
 	}
 	
 	//méthodes
