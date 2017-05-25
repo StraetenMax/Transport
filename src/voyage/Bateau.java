@@ -15,6 +15,7 @@ public class Bateau {
 		energie = "";
 		puissance = 0;
 		vitesseMax = 0;
+		System.out.println("Vivre le bateau");
 	}
 	public Bateau(int nbPassagers, String couleur,String energie,int puissance,int vitesseMax){
 		this.nbPassagers = nbPassagers;
@@ -22,6 +23,7 @@ public class Bateau {
 		this.energie = energie;
 		this.puissance = puissance;
 		this.vitesseMax = vitesseMax;
+		System.out.println("J'aime le bateau");
 	}
 	
 	//accesseurs et mutateurs
