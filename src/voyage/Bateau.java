@@ -73,5 +73,14 @@ public class Bateau {
 	}
 	
 	//méthodes
+	public boolean plusRapide(Bateau bt){
+		boolean btn;
+		if(bt.vitesseMax < this.vitesseMax){
+			btn = true;
+		}else{
+			btn = false;
+		}
+		return btn;
+	}
 
 }

@@ -18,6 +18,10 @@ public class Test {
 		System.out.println("J'aime la couleur "+bat2.getCouleur()+" de ce bateau");
 		bat2.setNbPassagers(20000);
 		System.out.println("Ce bâteau peut prendre "+bat2.getNbPassagers()+" passagers");
+	
+		System.out.println(bat1.plusRapide(bat2));
+		System.out.println(bat2.plusRapide(bat1));
+	
 	}
 
 }
