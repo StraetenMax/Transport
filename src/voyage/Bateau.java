@@ -95,5 +95,9 @@ public class Bateau {
 		}
 		return btn;
 	}
+	public String description(){
+		String str = "Je transporte "+this.getNbPassagers()+" passagers et je suis de couleur "+this.getCouleur()+" avec une énergie de "+this.getEnergie()+" "+this.getPuissance()+" "+this.getVitesseMax()+" "+this.getTypeBateau()+" ";
+		return str;
+	}
 
 }

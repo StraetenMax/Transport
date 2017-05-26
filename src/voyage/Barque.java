@@ -19,7 +19,12 @@ public class Barque extends Bateau{
 		return typeDeplacement;
 	}
 	public void setTypeDeplacement(String typeDeplacement){
-		this.typeDeplacement=typeDeplacement;
-		
+		this.typeDeplacement=typeDeplacement;	
+	}
+	
+	//methodes
+	public String description(){
+		String str1 = super.description()+ " je choisis de me déplacer en barque à "+this.getTypeBateau();
+		return str1;
 	}
 }

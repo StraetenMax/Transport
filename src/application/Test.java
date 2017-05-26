@@ -28,6 +28,9 @@ public class Test {
 		
 		Barque bq = new Barque();
 		System.out.println(bq.getNbPassagers());
+		
+		System.out.println(bat1.description());
+		System.out.println(bat2.description());
 	}
 
 }
