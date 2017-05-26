@@ -31,6 +31,31 @@ public class Test {
 		
 		System.out.println(bat1.description());
 		System.out.println(bat2.description());
+	
+		//Polymorphisme
+		//Définition d'un tableau de bateau vide
+		Bateau[] bt = new Bateau[4];
+		
+		//Définition d'un tableau
+		int tabNbPassagers[] = {300, 50, 100, 25};
+		String tabCouleur[] = {"Bleu","Rouge","Blanc","Gris"};
+		String tabEnergie[] = {"Diesel","Electrique","Voile","Charbon"};
+		int tabPuissance[] = {450, 200, 230, 130};
+		int tabVitesseMax[]={24, 40, 30, 25};
+		
+		for(int i = 0; i<4; i++){
+			if(i<3){
+			Bateau bateau = new Bateau(tabNbPassagers[i],tabCouleur[i],tabEnergie[i],tabPuissance[i],tabVitesseMax[i]);
+			bt[i] = bateau;
+			}else{
+			Barque barque = new Barque(tabNbPassagers[i], tabCouleur[i], tabEnergie[i], tabPuissance[i], tabVitesseMax[i], null);
+			bt[i] = barque;
+			}
+		}
+	
+		for(Bateau cv :bt){
+			System.out.println(cv.description()+"\n");
+		}
 	}
 
 }
