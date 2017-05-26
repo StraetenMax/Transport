@@ -8,6 +8,8 @@ public class Bateau {
 	private int puissance;
 	private int vitesseMax;
 	private String typeBateau;
+	private int nbInstances;
+	private static int nbInstancesClasse;
 	
 	//constructeurs vide et initialisé
 	public Bateau(){
@@ -17,6 +19,8 @@ public class Bateau {
 		puissance = 0;
 		vitesseMax = 0;
 		this.setTypeBateau();
+		nbInstances++;
+		nbInstancesClasse++;
 		System.out.println("Vivre le bateau");
 	}
 	public Bateau(int nbPassagers, String couleur,String energie,int puissance,int vitesseMax){
@@ -26,8 +30,11 @@ public class Bateau {
 		this.puissance = puissance;
 		this.vitesseMax = vitesseMax;
 		this.setTypeBateau();
+		nbInstances++;
+		nbInstancesClasse++;
 		System.out.println("J'aime le bateau");
 	}
+	
 	
 	//accesseurs et mutateurs
 	public int getNbPassagers(){
@@ -70,6 +77,12 @@ public class Bateau {
 		}else{
 			this.typeBateau = "paquebot";
 		}
+	}
+	public int getNbInstances(){
+		return nbInstances;
+	}
+	public static int getNbInstancesClasse(){
+		return nbInstancesClasse;
 	}
 	
 	//méthodes

@@ -21,7 +21,9 @@ public class Test {
 	
 		System.out.println(bat1.plusRapide(bat2));
 		System.out.println(bat2.plusRapide(bat1));
-	
+		
+		System.out.println(bat1.getNbInstances());
+		System.out.println(bat1.getNbInstancesClasse());
 	}
 
 }
