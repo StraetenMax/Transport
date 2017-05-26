@@ -2,6 +2,7 @@ package application;
 
 import voyage.Barque;
 import voyage.Bateau;
+import voyage.Navire;
 
 public class Test {
 
@@ -64,6 +65,9 @@ public class Test {
 		for(Object obj : bt){
 			System.out.println(((Bateau)obj).description()+"\n");
 			}
+	
+
+		
 	
 	}
 
