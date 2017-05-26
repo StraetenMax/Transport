@@ -53,9 +53,18 @@ public class Test {
 			}
 		}
 	
-		for(Bateau cv :bt){
+		/*for(Bateau cv :bt){
 			System.out.println(cv.description()+"\n");
-		}
+		}*/
+		
+		/*for(Object obj: bt){
+			System.out.println(obj.toString()+"\n");
+		}*/
+		
+		for(Object obj : bt){
+			System.out.println(((Bateau)obj).description()+"\n");
+			}
+	
 	}
 
 }
