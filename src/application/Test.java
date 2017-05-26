@@ -1,5 +1,6 @@
 package application;
 
+import voyage.Barque;
 import voyage.Bateau;
 
 public class Test {
@@ -24,6 +25,9 @@ public class Test {
 		
 		System.out.println(bat1.getNbInstances());
 		System.out.println(bat1.getNbInstancesClasse());
+		
+		Barque bq = new Barque();
+		System.out.println(bq.getNbPassagers());
 	}
 
 }
