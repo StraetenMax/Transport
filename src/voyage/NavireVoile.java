@@ -11,7 +11,7 @@ public class NavireVoile extends Navire{
 		rayonAction = 0;
 		this.setLongCourrier();
 	}
-	public NavireVoile(String forme, int nbDePlaces, int rayonAction, boolean longCourrier){
+	public NavireVoile(String forme, int nbDePlaces, int rayonAction){
 		super(forme, nbDePlaces);
 		this.rayonAction = rayonAction;
 		this.setLongCourrier();
