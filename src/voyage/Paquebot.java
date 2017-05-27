@@ -14,4 +14,19 @@ public class Paquebot extends NavireMoteur{
 			this.nbHublots = nbHublots;
 		}
 		
+		//accesseurs et mutateurs
+		public int getNbHublots(){
+			return nbHublots;
+		}
+		public void setNbHublots(int nbHublots){
+			this.nbHublots=nbHublots;
+		}
+		
+		//méthodes
+		public void avancer(){
+			System.out.println("J'avance en paquebot");
+		}
+		public void seGarer(){
+			System.out.println("Je me gare au port");
+		}
 }
