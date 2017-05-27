@@ -1,6 +1,8 @@
 package application;
 
 import voyage.Barque;
+import voyage.NavireMoteur;
+import voyage.NavireVoile;
 import voyage.Bateau;
 import voyage.Navire;
 
@@ -66,8 +68,13 @@ public class Test {
 			System.out.println(((Bateau)obj).description()+"\n");
 			}
 	
-
+		NavireMoteur navM = new NavireMoteur();
+		navM.avancer();
+		navM.seGarer();
 		
+		NavireVoile navV = new NavireVoile();
+		navV.avancer();
+		navV.seGarer();
 	
 	}
 
