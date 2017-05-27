@@ -15,4 +15,17 @@ public class Voilier extends NavireVoile{
 	}
 	
 	//accesseurs et mutateurs
+	public String getFabricants(){
+		return fabricants;
+	}
+	public void setFabricants(String fabricants){
+		this.fabricants=fabricants;
+	}
+	//méthodes
+	public void avancer(){
+		System.out.println("J'avance en voilier");
+	}
+	public void seGarer(){
+		System.out.println("Je me range sur la plage");
+	}
 }
