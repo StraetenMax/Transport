@@ -15,5 +15,19 @@ public class Goelette extends NavireVoile {
 	}
 	
 	//accesseurs et mutateurs
+	public boolean getCanon(){
+		return canon;
+	}
+	public void setCanon(boolean canon){
+		this.canon =canon;
+	}
+	
+	//méthodes
+	public void avancer(){
+		System.out.println("J'avance en goelette");
+	}
+	public void seGarer(){
+		System.out.println("Je me gare au port");
+	}
 	
 }
