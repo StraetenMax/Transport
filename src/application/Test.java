@@ -3,6 +3,7 @@ package application;
 import voyage.Barque;
 import voyage.NavireMoteur;
 import voyage.NavireVoile;
+import voyage.NbPassagersException;
 import voyage.Bateau;
 import voyage.Navire;
 
@@ -10,13 +11,16 @@ public class Test {
 
 	public static void main(String[] args) {
 		//instancier les classes
+		try{
 		Bateau bat = new Bateau();
 		Bateau bat1 = new Bateau(300,"Bleu","Diesel",350,30);
 		Bateau bat2 = new Bateau(5000, "Blanc","Electricité", 150, 40);
-		
+		}
+		catch(NbPassagersException Exc1){}
+		}
 		
 		//appeler les méthodes
-		System.out.println("J'aime la couleur "+bat1.getCouleur()+" de ce bateau");
+		/*System.out.println("J'aime la couleur "+bat1.getCouleur()+" de ce bateau");
 		System.out.println("La vitesse de ce bateau est de "+bat1.getVitesseMax()+" km/h");
 		bat2.setCouleur("Rouge");
 		System.out.println("J'aime la couleur "+bat2.getCouleur()+" de ce bateau");
@@ -64,7 +68,7 @@ public class Test {
 			System.out.println(obj.toString()+"\n");
 		}*/
 		
-		for(Object obj : bt){
+		/*for(Object obj : bt){
 			System.out.println(((Bateau)obj).description()+"\n");
 			}
 	
@@ -76,6 +80,6 @@ public class Test {
 		navV.avancer();
 		navV.seGarer();
 	
-	}
+	}*/
 
 }

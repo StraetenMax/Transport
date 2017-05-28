@@ -27,6 +27,7 @@ public class Bateau {
 		if(nbPassagers<0){
 			throw new NbPassagersException();
 		}else{
+		System.out.println("Creation bateau initilise");
 		this.nbPassagers = nbPassagers;
 		this.couleur = couleur;
 		this.energie = energie;
