@@ -25,7 +25,7 @@ public class Bateau {
 	}
 	public Bateau(int nbPassagers, String couleur,String energie,int puissance,int vitesseMax)throws NbPassagersException{
 		if(nbPassagers<0){
-			throw new NbPassagersException();
+			throw new NbPassagersException(nbPassagers);
 		}else{
 		System.out.println("Creation bateau initilise");
 		this.nbPassagers = nbPassagers;
