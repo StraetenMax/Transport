@@ -23,7 +23,10 @@ public class Bateau {
 		nbInstancesClasse++;
 		System.out.println("Vivre le bateau");
 	}
-	public Bateau(int nbPassagers, String couleur,String energie,int puissance,int vitesseMax){
+	public Bateau(int nbPassagers, String couleur,String energie,int puissance,int vitesseMax)throws NbPassagersException{
+		if(nbPassagers<0){
+			throw new NbPassagersException();
+		}else{
 		this.nbPassagers = nbPassagers;
 		this.couleur = couleur;
 		this.energie = energie;
@@ -32,7 +35,7 @@ public class Bateau {
 		this.setTypeBateau();
 		nbInstances++;
 		nbInstancesClasse++;
-		System.out.println("J'aime le bateau");
+		System.out.println("J'aime le bateau");}
 	}
 	
 	
